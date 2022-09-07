@@ -71,7 +71,7 @@ jobs:
       - run:
           name: Setup python virtual environment
           command: |
-            python3 -m venv .capstoneenv
+            python3 -m venv capstoneenv
             . capstoneenv/bin/activate
             pip install --no-cache-dir -r requirements.txt
       - setup_remote_docker:
