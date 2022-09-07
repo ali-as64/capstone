@@ -48,6 +48,7 @@ jobs:
             #./hadolint Dockerfile
             #pylint --disable=R,C,W1203,W1202 myCapstone_helloworld.py
             #make lint
+            
       # run lint
       - run:
           name: run lint for green deployment
