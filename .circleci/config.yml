@@ -81,10 +81,10 @@ jobs:
           command: |
             . capstoneenv/bin/activate
             cd blue
-            docker build -t alias64/$IMAGE_NAME .
+            docker build --tag=alias64/blueimagedeploy:blue .
             docker login -u alias64 
             # Pusing docker images to git hub
-            docker push alias64/$IMAGE_NAME
+            docker push alias64/blueimagedeploy:blue
       - run:
           name: Build green docker container
           command: |
