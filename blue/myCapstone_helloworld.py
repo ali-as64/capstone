@@ -2,7 +2,6 @@ from flask import Flask, render_template
 
 app = Flask(__name__)
 
-
 @app.route('/')
 def myCapstone_helloworld():
     message= "This my Capstone project at Udacity, Cloud DevOps Engineer Nanodegree!"
